@@ -1,1 +1,3 @@
-// You can add JavaScript code here if needed
+function showAlert() {
+  alert('Nothing to Explore yet!');
+}
