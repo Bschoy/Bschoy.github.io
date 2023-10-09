@@ -1,3 +1,3 @@
-function showAlert() {
+function showAlertExplore() {
   alert('Nothing to Explore yet!');
 }
