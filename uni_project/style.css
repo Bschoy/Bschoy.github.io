@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.975); /* Fallback for older browsers */
+  position: relative; /* Ensure that absolute positioning is relative to the body */
+}
+
+#home-button {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  color: gray;
+  text-decoration: none;
+  padding: 10px;
+  z-index: 10; /* Ensure the home button is above the gradient container */
+}
+
+#home-button:hover {
+  color: #3498db;
+}
+
+#gradient-container {
+  position: absolute; /* Position it absolutely relative to the body */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  height: 50vh; /* Height of the top third */
+  /* height: 25vh */
+  width: 100%; /* Full width of the viewport */
+  z-index: 0; /* Ensure it is below other content */
+}
+
+h1 {
+  margin: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure the heading is above other elements */
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: gray;
+  margin: 15px auto 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 400px;
+  padding-right: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  z-index: 1; /* Ensure the heading is above other elements */
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 600px;
+  height: 2px;
+  background-color: gray;
+  margin: 15px auto 0;
+  text-align: left;
+  padding-right: 50px;
+}
+
+h5 {
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  z-index: 1; /* Ensure the heading is above other elements */
+}
+
+h5::after {
+  content: "";
+  display: block;
+  width: 600px;
+  height: 2px;
+  background-color: gray;
+  margin: 15px auto 0;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px; /* Increase the gap between grid items */
+  row-gap: 10px; /* Increase the gap between grid rows */
+  width: 90%;
+  max-width: 1200px;
+  z-index: 1; /* Ensure the cards are above the gradient container */
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color */
+}
+
+.card img {
+  width: 100px;
+  height: 150px;
+  border-radius: 0px;
+  margin-right: 20px;
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.tags span {
+  background-color: #acacac;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tags span:last-child {
+  background-color: #5f5f5f;
+}
+
+.details-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1; /* Ensure details are above the gradient container */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.image-container img {
+  width: 410px;
+  height: 750px;
+  padding-top: 50px;
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+.details-content {
+  flex: 2;
+  padding: 20px;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+ul li,
+ol li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

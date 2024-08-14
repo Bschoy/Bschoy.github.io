@@ -1,0 +1,22 @@
+- HTML5-Seite mit CSS3
+- Eigene Ordnerstruktur [Assets, CSS,…]
+- Pflichtelemente: Audio, Video, Canvas-2D, SVG [jew. Selbst erzeugt]
+- PDF [Web] zum Download, selbst erzeugt
+- 1 x WireFrame [4+ Leitfarben, Bemaßung, Fonts]
+- Semantische Korrektheit [Barriere-Armut]
+- Alle HTML- und CSS-Dokumente valide, CSS-Kaskade erkennbar
+
+assests: bilder der zutaten + cocktails
+
+Featured cocktail: Mojito
+--> video instructions
+--> audio instructions
+--> canvas-2d animation von den zutaten
+--> svg animation vom cocktail
+--> pdf download vom rezept
+
+other cocktails: ... (non cklickable)
+
+https://cocktailflow.com
+
+kress mail schreiben
