@@ -13,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -54,4 +55,159 @@ p {
 
 .testing:hover {
   opacity: 100%;
+}
+
+/* Dark-themed alert modal styling */
+.custom-alert {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it is on top */
+  opacity: 0;
+  transition: opacity 0.4s ease; /* Smooth fade-in transition */
+}
+
+.custom-alert.show {
+  opacity: 1; /* Make the alert visible when 'show' class is added */
+}
+
+.alert-content {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.5s ease; /* Add slide-in effect */
+  max-width: 90%;
+  width: 400px;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.alert-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.alert-content button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 12px; /* Rounded pill-shaped button */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.alert-content button:hover {
+  background-color: #777;
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+.alert-content button:active {
+  transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+/* Media Queries for responsiveness */
+
+/* Larger than 600px (tablets, small laptops) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .explore {
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Adjust alert content */
+  .alert-content {
+    width: 70%;
+    padding: 30px 0;
+  }
+}
+
+/* Larger than 400px (large smartphones) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .explore {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .testing {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  /* Adjust alert content for smaller screens */
+  .alert-content {
+    width: 70%;
+    padding: 30px 0;
+  }
+
+  .alert-content p {
+    font-size: 1rem;
+  }
+
+  .alert-content button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Very small screens (max-width 320px) */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .explore {
+    padding: 0.25rem 0.6rem;
+  }
+
+  .alert-content {
+    width: 70%;
+    padding: 30px 0;
+  }
+
+  .alert-content p {
+    font-size: 0.9rem;
+  }
+
+  .alert-content button {
+    font-size: 0.85rem;
+    padding: 6px 15px;
+  }
 }
