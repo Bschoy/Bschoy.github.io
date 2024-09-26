@@ -1,9 +1,12 @@
-body {
+body,
+html {
   background-color: #222;
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
@@ -14,6 +17,7 @@ body {
   height: 100vh;
   text-align: center;
   padding: 1rem;
+  box-sizing: border-box; /* Ensures padding is included in height */
 }
 
 h1 {
@@ -49,7 +53,7 @@ p {
   color: #333;
   text-decoration: none;
   border-radius: 5px;
-  opacity: 0%;
+  opacity: 0%; /* Hidden initially */
   transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
@@ -162,8 +166,8 @@ p {
   }
 
   .testing {
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     padding: 8px;
   }
 
